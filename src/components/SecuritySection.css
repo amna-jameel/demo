@@ -1,0 +1,131 @@
+.security-section {
+  padding: 6.5rem 0;
+  background-color: var(--bg-dark);
+  border-top: 1px solid var(--border-dark);
+}
+
+.security-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.security-image-frame {
+  position: relative;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 1px solid var(--border-dark-hover);
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.6);
+  background-color: var(--bg-dark-surface);
+}
+
+.security-img {
+  width: 100%;
+  height: 480px;
+  object-fit: cover;
+  display: block;
+}
+
+.security-badge-overlay {
+  position: absolute;
+  bottom: 1.25rem;
+  left: 1.25rem;
+  background: rgba(11, 14, 17, 0.88);
+  backdrop-filter: blur(10px);
+  padding: 0.75rem 1.125rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border-dark);
+  display: flex;
+  flex-direction: column;
+}
+
+.badge-tag {
+  font-size: 0.625rem;
+  letter-spacing: 0.1em;
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.badge-title {
+  font-size: 0.875rem;
+  color: var(--text-dark-primary);
+  font-weight: 500;
+}
+
+.security-content-col {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.security-headline {
+  color: var(--text-dark-primary);
+  margin-bottom: 1.25rem;
+}
+
+.security-description {
+  margin-bottom: 2rem;
+}
+
+.security-pillars-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+  margin-bottom: 2.25rem;
+}
+
+.security-pillar-row {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.875rem 1.125rem;
+  background-color: var(--bg-dark-surface);
+  border: 1px solid var(--border-dark);
+  border-radius: var(--radius-sm);
+  transition: border-color var(--transition-fast);
+}
+
+.security-pillar-row:hover {
+  border-color: var(--border-dark-hover);
+}
+
+.pillar-icon-box {
+  width: 34px;
+  height: 34px;
+  border-radius: var(--radius-sm);
+  background: var(--accent-soft);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.pillar-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.pillar-name {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--text-dark-primary);
+}
+
+.pillar-desc {
+  font-size: 0.75rem;
+  color: var(--text-dark-secondary);
+}
+
+@media (max-width: 1024px) {
+  .security-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .security-img {
+    height: 340px;
+  }
+}
